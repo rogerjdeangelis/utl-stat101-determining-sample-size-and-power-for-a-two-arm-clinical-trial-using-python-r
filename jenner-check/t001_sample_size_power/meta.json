@@ -1,0 +1,7 @@
+{
+  "bundle": "t001_sample_size_power",
+  "source_file": "utl-stat101-determining-sample-size-and-power-for-a-two-arm-clinical-trial-using-python-r.sas",
+  "source_blob_sha": "2a587378de2932414ca0b9dfaf298ed612b9bdec",
+  "source_commit": "870787737228bca2ac145e40cfb63aa5ad1c01dc",
+  "notes": "Native-SAS port of the repo's calculate_sample_size routine (originally a %utl_pybegin scipy block, cross-checked with the R pwr package). Same alpha/power/effect_size inputs, same t_alpha/t_beta variables and 5-iteration refinement loop; SAS TINV/PROBIT stand in for scipy.stats.t.ppf. Produces n=64 per arm, matching the repo's documented Python and R output. No sample data needed (all inputs inline)."
+}
